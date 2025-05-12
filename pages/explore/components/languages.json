@@ -1,0 +1,144 @@
+{
+  "lenguajes": [
+    {
+      "id": 1,
+      "nombre": "JavaScript",
+      "tipo": "Frontend/Backend",
+      "icono": "SiJavascript",
+      "color": "#F7DF1E"
+    },
+    {
+      "id": 2,
+      "nombre": "Python",
+      "tipo": "General",
+      "icono": "SiPython",
+      "color": "#3776AB"
+    },
+    {
+      "id": 3,
+      "nombre": "TypeScript",
+      "tipo": "Frontend/Backend",
+      "icono": "SiTypescript",
+      "color": "#3178C6"
+    },
+    {
+      "id": 4,
+      "nombre": "Java",
+      "tipo": "Backend",
+      "icono": "SiJava",
+      "color": "#007396"
+    },
+    {
+      "id": 5,
+      "nombre": "C#",
+      "tipo": "Backend",
+      "icono": "SiCsharp",
+      "color": "#239120"
+    },
+    {
+      "id": 6,
+      "nombre": "PHP",
+      "tipo": "Backend",
+      "icono": "SiPhp",
+      "color": "#777BB4"
+    },
+    {
+      "id": 7,
+      "nombre": "Go",
+      "tipo": "Backend",
+      "icono": "SiGo",
+      "color": "#00ADD8"
+    },
+    {
+      "id": 8,
+      "nombre": "Kotlin",
+      "tipo": "Mobile/Backend",
+      "icono": "SiKotlin",
+      "color": "#7F52FF"
+    },
+    {
+      "id": 9,
+      "nombre": "Swift",
+      "tipo": "Mobile",
+      "icono": "SiSwift",
+      "color": "#F05138"
+    },
+    {
+      "id": 10,
+      "nombre": "Rust",
+      "tipo": "Sistemas",
+      "icono": "SiRust",
+      "color": "#000000"
+    },
+    {
+      "id": 11,
+      "nombre": "Ruby",
+      "tipo": "Backend",
+      "icono": "SiRuby",
+      "color": "#CC342D"
+    },
+    {
+      "id": 12,
+      "nombre": "C++",
+      "tipo": "Sistemas",
+      "icono": "SiCplusplus",
+      "color": "#00599C"
+    },
+    {
+      "id": 13,
+      "nombre": "R",
+      "tipo": "Ciencia de Datos",
+      "icono": "SiR",
+      "color": "#276DC3"
+    },
+    {
+      "id": 14,
+      "nombre": "Dart",
+      "tipo": "Mobile",
+      "icono": "SiDart",
+      "color": "#0175C2"
+    },
+    {
+      "id": 15,
+      "nombre": "Elixir",
+      "tipo": "Backend",
+      "icono": "SiElixir",
+      "color": "#4B275F"
+    },
+    {
+      "id": 16,
+      "nombre": "Scala",
+      "tipo": "Backend",
+      "icono": "SiScala",
+      "color": "#DC322F"
+    },
+    {
+      "id": 17,
+      "nombre": "Perl",
+      "tipo": "Scripting",
+      "icono": "SiPerl",
+      "color": "#39457E"
+    },
+    {
+      "id": 18,
+      "nombre": "Haskell",
+      "tipo": "Funcional",
+      "icono": "SiHaskell",
+      "color": "#5D4F85"
+    },
+    {
+      "id": 19,
+      "nombre": "Lua",
+      "tipo": "Embedded",
+      "icono": "SiLua",
+      "color": "#2C2D72"
+    },
+    {
+      "id": 20,
+      "nombre": "Clojure",
+      "tipo": "Funcional",
+      "icono": "SiClojure",
+      "color": "#5881D8"
+    }
+  ]
+}

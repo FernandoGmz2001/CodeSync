@@ -1,11 +1,6 @@
 <template>
    <header>
-    <SignedOut>
-      <SignInButton />
-    </SignedOut>
-    <SignedIn>
-      <UserButton />
-    </SignedIn>
+
   </header>
 
   <div class="text-blue-400 font-bold">
