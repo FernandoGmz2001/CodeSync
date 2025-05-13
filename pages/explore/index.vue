@@ -9,7 +9,6 @@ const searchQuery = ref('')
 const selectedStatus = ref('all')
 const isLoading = ref(false)
 
-// Filtrado combinado
 const filteredProblems = computed(() => {
   return problems.value.filter(problem => {
     const matchesSearch = problem.title.toLowerCase().includes(searchQuery.value.toLowerCase()) ||
@@ -29,7 +28,6 @@ function handleSolve(problemId: string) {
 }
 
 function handleView(problemId: string) {
-  // Implementar navegación según tu router
   console.log('Navegar a problema:', problemId)
 }
 
@@ -43,27 +41,24 @@ function handleStatusChange(status: string) {
 </script>
 
 <template>
-  <div class="p-6 max-w-7xl mx-auto">
+  <div class="p-6 max-w-7xl mx-auto dark">
     <div class="flex flex-col lg:flex-row gap-6">
-      <!-- Filtros -->
       <div class="">
-        <div class="bg-white p-4 rounded-lg shadow-sm border">
-          <h2 class="text-lg font-semibold mb-4">Filtros</h2>
+        <div class=" dark p-4 rounded-lg">
+          <h2 class="text-lg font-semibold mb-4 text-white">Filtros</h2>
           <Filters
             @search="handleSearch"
             @status-change="handleStatusChange"
           />
         </div>
       </div>
-
-      <!-- Listado principal -->
       <div class="flex-1">
         <div class="mb-6 flex flex-col sm:flex-row justify-between items-start gap-4">
-          <h1 class="text-2xl font-bold">
+          <h1 class="text-2xl font-bold text-white">
             Posts
-            <span class="text-gray-500 text-lg">({{ filteredProblems.length }})</span>
+            <span class="text-white text-lg">({{ filteredProblems.length }})</span>
           </h1>
-          <Button>
+          <Button class="dark">
             <LucideCirclePlus />
 
             Crear pregunta

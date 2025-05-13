@@ -1,7 +1,7 @@
 {
   "problems": [
     {
-      "id": "prob-001",
+      "id": "1",
       "title": "Problema con useState en React",
       "description": "Al actualizar el estado basado en el estado anterior, los cambios no se reflejan correctamente en el componente.",
       "language": "JavaScript",
@@ -9,10 +9,11 @@
       "author": {
         "id": "user-123",
         "username": "ana_lopez"
-      }
+      },
+      "status": "Resolved"
     },
     {
-      "id": "prob-002",
+      "id": "2",
       "title": "Error en el manejo de rutas con Nuxt",
       "description": "Las rutas dinámicas no se están generando correctamente durante el build en producción.",
       "language": "TypeScript",
@@ -20,10 +21,11 @@
       "author": {
         "id": "user-456",
         "username": "carlos_mendez"
-      }
+      },
+      "status": "Resolved"
     },
     {
-      "id": "prob-003",
+      "id": "3",
       "title": "Problema de rendimiento con listas grandes en Vue",
       "description": "La renderización de una lista con más de 1000 elementos está causando lentitud en la aplicación.",
       "language": "Vue",
@@ -31,7 +33,8 @@
       "author": {
         "id": "user-789",
         "username": "laura_gomez"
-      }
+      },
+      "status": "Resolved"
     }
   ]
 }

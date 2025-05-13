@@ -5,6 +5,7 @@ export interface Problem {
   language: string;
   createdAt: Date;
   author: Author;
+  status: string;
 }
 
 export interface Author {

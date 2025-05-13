@@ -5,16 +5,22 @@ import { Card, CardContent, CardFooter, CardHeader, CardTitle } from '@/componen
 import { LucideCircleUser, LucideHandHelping } from 'lucide-vue-next';
 import type { Problem } from '~/types/problems'
 
+const router = useRouter()
 const props = defineProps<{
   problem: Problem
   showActions?: boolean
 }>()
 
 const emit = defineEmits(['solve', 'view'])
+
+const handleRedirect = (id : string) => {
+  router.push(`explore/posts/${id}`)
+}
 </script>
 
+
 <template>
-  <Card class="hover:shadow-lg transition-shadow duration-200 w-full">
+  <Card class="hover:shadow-lg transition-shadow duration-200 w-full" @click="handleRedirect(problem.id)">
     <CardHeader>
       <CardTitle class="line-clamp-1 flex flex-col ">
         <div class="flex items-center gap-2 text-xs text-gray-500">
@@ -37,7 +43,7 @@ const emit = defineEmits(['solve', 'view'])
       </div>
     </CardContent>
 
-    <CardFooter v-if="showActions" class="flex justify-between gap-2 w-full  flex-end justify-end">
+    <CardFooter v-if="showActions" class="flex gap-2 w-full  flex-end justify-end">
       <Button size="sm" @click="emit('solve', problem.id)">
         <LucideHandHelping />
         Colaborar

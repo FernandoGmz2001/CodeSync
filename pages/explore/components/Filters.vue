@@ -4,11 +4,18 @@ import { Input } from '@/components/ui/input'
 import { Search } from 'lucide-vue-next'
 import languages from './languages.json'
 import { sortOptions } from './utils';
+import Checkbox from '~/components/ui/checkbox/Checkbox.vue';
+
+const showOnlyMine = ref(false)
 </script>
 
 <template>
 
-  <Card class="flex flex-col items-center gap-4 p-4 w-[400px]">
+  <Card class="flex flex-col items-center gap-4 p-4 w-[400px] dark">
+    <div class="flex gap-2 w-full">
+      <Checkbox :checked="showOnlyMine" @change="$emit('user-filter-change', $event)" />
+      <Label>Mostrar solo mis incidencias</Label>
+    </div>
     <div class="relative w-full max-w-sm items-center">
       <Input id="search" type="text" placeholder="Buscar por nombre..." class="pl-7" />
       <span class="absolute start-0 inset-y-0 flex items-center justify-center px-2">

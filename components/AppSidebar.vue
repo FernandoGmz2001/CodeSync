@@ -25,11 +25,6 @@ const mainItems = [
     url: "/explore",
     icon: Home,
   },
-  {
-    title: "Mis Solicitudes",
-    url: "/requests",
-    icon: ClipboardList,
-  },
     {
     title: "Usuarios",
     url: "/users",

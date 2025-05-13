@@ -4,9 +4,9 @@ import { SidebarProvider, SidebarTrigger } from '@/components/ui/sidebar'
 </script>
 
 <template>
-  <SidebarProvider>
+  <SidebarProvider class="dark">
     <AppSidebar />
-    <main class="w-full">
+    <main class="w-full bg-[#1a1a1a]">
       <Navbar>
         <SidebarTrigger />
       </Navbar>
