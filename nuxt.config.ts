@@ -9,7 +9,11 @@ export default defineNuxtConfig({
     plugins: [tailwindcss()],
   },
 
-  modules: ["shadcn-nuxt", "@clerk/nuxt"],
+  modules: [
+    "shadcn-nuxt",
+    "@clerk/nuxt",
+    "nuxt-mongoose",
+  ],
   shadcn: {
     /**
      * Prefix for all the imported component
@@ -20,6 +24,6 @@ export default defineNuxtConfig({
      * @default "./components/ui"
      */
     componentDir: "./components/ui",
-  },
+  } 
 });
 
