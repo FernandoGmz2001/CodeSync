@@ -13,8 +13,8 @@ const props = defineProps<{
 
 const emit = defineEmits(['solve', 'view'])
 
-const handleRedirect = (id : string) => {
-  router.push(`explore/posts/${id}`)
+const handleRedirect = (id: string) => {
+  router.push(`explore/${id}`)
 }
 </script>
 
